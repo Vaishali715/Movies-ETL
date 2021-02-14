@@ -3,7 +3,7 @@
 Amazing Prime wants to keep data updated on a daily basis and we have to create an automated pipeline that takes in new data, performs the appropriate transformations and loads the data into existing tables. We will use Wikipedia data, Kaggle metadata, and the MovieLens rating data and perform the ETL(Extract-Transform-Load) process by adding the data to a PostgreSQL database.
 
 ## Results
-##### Deliverable 1 :ETL Function to Read Three Data Files
+#### Deliverable 1 :ETL Function to Read Three Data Files
 
 In this deliverable we will use Python, Pandas, the ETL process, and code refactoring to write a function that reads in three data files and creates three separate DataFrames. The following steps will read the three data files.
 
@@ -44,7 +44,7 @@ In this deliverable we will use Python, Pandas, the ETL process, and code refact
 
    ![Image](https://github.com/Vaishali715/Movies-ETL/blob/main/Reference_Images/del_1_ratings.png)
 
-##### Deliverable 2 : Extract and Transform the Wikipedia Data
+#### Deliverable 2 : Extract and Transform the Wikipedia Data
 In this deliverable we will use Python, Pandas, the ETL process, and code refactoring to extract and transform the Wikipedia data so we can merge it with the Kaggle metadata.The following steps will extract and transform the Wikipedia data.
 
 1 . Create a function called clean_movie(). Inside this function we will make an empty dictionary, alt_titles = {} to hold all of the alternative titles, using list comprehensions. Loop through a list of all alternative title keys, check if the current key exists in the movie object, if so, remove the key-value pair and add to the alternative titles dictionary. After looping through every key, add the alternative titles dict to the movie object.
@@ -95,7 +95,7 @@ g. The following columns are cleaned in the Wikipedia DataFrame. Refer the links
 
 The cleaned Wikipedia data is converted to a Pandas DataFrame, and the DataFrame is displayed in the ETL_clean_wiki_movies.ipynb file.
 
-##### Deliverable 3 : Extract and Transform the Kaggle Data
+#### Deliverable 3 : Extract and Transform the Kaggle Data
 
 In this deliverable we will use Python, Pandas, the ETL process, and code refactoring to extract and transform the Kaggle metadata and MovieLens rating data, then convert the transformed data into separate DataFrames. Then we will merge the Kaggle metadata DataFrame with the Wikipedia movies DataFrame to create the movies_df DataFrame and finally merge the MovieLens rating data DataFrame with the movies_df DataFrame to create the movies_with_ratings_df.
 
@@ -122,7 +122,7 @@ Links for the screenshots of movies_with_ratings_df and the movies_df DataFrames
 ![Image](https://github.com/Vaishali715/Movies-ETL/blob/main/Reference_Images/del_3_movies_df.png)
 ![Image](https://github.com/Vaishali715/Movies-ETL/blob/main/Reference_Images/del_3_movies_ratings_df.png)
 
-##### Deliverable 4 : Create the Movie Database
+#### Deliverable 4 : Create the Movie Database
 
 In this deliverable we will use Python, Pandas, the ETL process, code refactoring, and PostgreSQL to add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
 
